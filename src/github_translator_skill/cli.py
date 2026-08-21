@@ -8,6 +8,10 @@ import subprocess
 import sys
 import tempfile
 
+# Forçar UTF-8 na saída do terminal (corrige acentuação no Windows)
+if hasattr(sys.stdout, 'reconfigure'):
+    sys.stdout.reconfigure(encoding='utf-8')
+
 
 # Pastas que indicam conteúdo de tradução
 TRANSLATABLE_DIRS = {"docs", "locales", "i18n", "lang"}
