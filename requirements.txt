@@ -1,0 +1,7 @@
+# github-translator-skill dependencies
+# Nenhuma dependência externa necessária no momento (MVP)
+
+# Dependências futuras podem incluir:
+# - requests (para acessar a API do GitHub)
+# - gitpython (para operações Git)
+# - click (para CLI mais robusta, se necessário)

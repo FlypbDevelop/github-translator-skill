@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "github-translator-skill"
+version = "0.1.0"
+description = "Skill para analisar repositórios GitHub e auxiliar tradução sem modificar o projeto original"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+authors = [
+    {name = "GitHub Translator Team"}
+]
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Localization",
+    "Topic :: Software Development :: Version Control :: Git",
+]
+
+[project.scripts]
+github-translator = "github_translator_skill.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
