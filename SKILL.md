@@ -1,13 +1,14 @@
-# Skill Manifest — github-translator
-
-## Metadata
-
-- **name:** github-translator
-- **description:** Analisa um repositório GitHub para auxiliar tradução sem modificar o projeto original
-- **version:** 0.1.0
-- **entrypoint:** src/github_translator_skill/cli.py
-
 ---
+name: github-translator
+description: Analisa repositórios GitHub para auxiliar tradução sem modificar o projeto original — clona temporariamente, identifica arquivos traduzíveis (.md, docs/, locales/, i18n/, lang/), lê conteúdo de arquivos e salva traduções com geração de patch. Use quando o usuário pedir para analisar ou traduzir um repositório GitHub.
+license: MIT
+compatibility: Requer Python 3.11+ e Git disponível no PATH
+metadata:
+  version: 0.1.0
+  entrypoint: src/github_translator_skill/cli.py
+---
+
+# Skill Manifest — github-translator
 
 ## Descrição
 
